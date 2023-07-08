@@ -4,12 +4,12 @@ try
 {
     Producto producto = CrearProducto();
 
-    Console.WriteLine("Nombre: " + producto.Nombre);
-    Console.WriteLine("Precio: " + producto.Precio);
-    Console.WriteLine("Cantidad disponible: " + producto.CantidadDisponible);
+    Console.WriteLine("Nombre..................................: " + producto.Nombre);
+    Console.WriteLine("Precio..................................: " + producto.Precio);
+    Console.WriteLine("Cantidad disponible.....................: " + producto.CantidadDisponible);
 
-    Console.WriteLine("Realizar una compra:");
-    Console.Write("Ingrese la cantidad deseada: ");
+    Console.WriteLine("\nRealizar una compra:");
+    Console.Write("Ingrese la cantidad deseada.............: ");
     int cantidadComprada = Convert.ToInt32(Console.ReadLine());
 
     producto.ActualizarCantidad(cantidadComprada);
